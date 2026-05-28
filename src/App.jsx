@@ -295,14 +295,27 @@ function App() {
                 e.preventDefault();
                 scrollToSection("home");
               }}
-              className="flex items-center cursor-pointer focus:outline-none flex-shrink-0"
+              className="flex items-center gap-3 cursor-pointer focus:outline-none flex-shrink-0"
               id="navbar-logo"
             >
               <img
                 src="/assets/logo.jpg"
-                alt="MAX Super Speciality Hospital"
-                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain scale-[1.9] sm:scale-[2] md:scale-[2.1] origin-left transition-all duration-300"
+                alt="MAX Logo"
+                className="h-12 sm:h-16 w-auto object-contain transition-all duration-300"
               />
+              <div className="flex items-center gap-2.5 whitespace-nowrap text-left">
+                <span className="text-4xl sm:text-5xl font-black tracking-tight text-slate-900 leading-none">
+                  MAX
+                </span>
+                <div className="flex flex-col justify-center leading-none">
+                  <span className="text-[10px] sm:text-xs font-bold tracking-widest text-slate-500 uppercase">
+                    Super Speciality
+                  </span>
+                  <span className="text-sm sm:text-base font-black tracking-wider text-hospital-600 uppercase mt-0.5">
+                    Hospital
+                  </span>
+                </div>
+              </div>
             </a>
 
 
@@ -439,7 +452,7 @@ function App() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-base sm:text-lg text-slate-650 mb-8 leading-relaxed max-w-xl"
               >
-                Providing trusted, patient-centered healthcare with experienced specialists, advanced diagnostics, and modern treatment facilities. Led by renowned neurologist <strong>Dr. Sirisha Yasa</strong>, we offer comprehensive multispeciality medical care in Ameenpur, Hyderabad.
+                Providing trusted, patient-centered healthcare with experienced specialists, advanced diagnostics, and modern treatment facilities. Led by <strong>Dr. Sirisha Yasa</strong> (Neurology), <strong>Dr. P. Praveen Reddy</strong> (Diabetology & General Medicine), and <strong>Dr. K. Rajasekhar Reddy</strong> (Orthopaedics), we offer comprehensive multispeciality medical care in Ameenpur, Hyderabad.
               </motion.p>
 
               {/* Action Buttons */}
@@ -635,14 +648,6 @@ function App() {
                 closer to you with compassionate and specialized treatment
                 under one roof."
               </p>
-
-              <div className="font-bold text-white">
-                Dr. Sirisha Yasa
-              </div>
-
-              <div className="text-sm text-slate-300">
-                Consultant Neurologist & Director
-              </div>
             </div>
 
           </div>
@@ -872,13 +877,13 @@ function App() {
               <div className="relative aspect-[4/5] bg-slate-200 overflow-hidden">
                 <img
                   src="/assets/doctor-2.jpg"
-                  alt="Dr. Praveen Reddy - Diabetologist & General Medicine"
+                  alt="Dr. P. Praveen Reddy - Diabetologist & General Medicine"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.parentNode.classList.add('bg-gradient-to-br', 'from-hospital-600', 'to-hospital-800', 'flex', 'flex-col', 'items-center', 'justify-center', 'text-white', 'p-4');
                     const textNode = document.createElement('span');
-                    textNode.innerText = 'Dr. Praveen Reddy';
+                    textNode.innerText = 'Dr. P. Praveen Reddy';
                     textNode.className = 'font-bold text-lg text-center';
                     const specNode = document.createElement('span');
                     specNode.innerText = 'Diabetologist & General Medicine';
@@ -894,9 +899,9 @@ function App() {
                   Diabetologist & General Medicine
                 </span>
                 <h4 className="font-extrabold text-lg text-slate-900 mb-1 group-hover:text-hospital-600 transition-colors">
-                  Dr. Praveen Reddy
+                  Dr. P. Praveen Reddy
                 </h4>
-                <div className="text-xs font-bold text-slate-500 mb-3">MBBS, DNB, FIDM (DIAB)</div>
+                <div className="text-xs font-bold text-slate-500 mb-3">MBBS, DNB, FIDM (Diabetes)</div>
 
                 <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
                   <span className="font-semibold text-slate-655 text-slate-500 flex items-center gap-1">
@@ -1460,7 +1465,7 @@ function App() {
                 </div>
               </a>
               <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-sm">
-                5.0-Star rated advanced medical diagnostic clinic. Led by Consultant Neurologist **Dr. Sirisha Yasa**, we deliver modern multidisciplinary care in Ameenpur, Hyderabad.
+                5.0-Star rated advanced medical diagnostic clinic. Led by <strong>Dr. Sirisha Yasa</strong> (Neurology), <strong>Dr. P. Praveen Reddy</strong> (Diabetology & General Medicine), and <strong>Dr. K. Rajasekhar Reddy</strong> (Orthopaedics), we offer comprehensive multispeciality medical care in Ameenpur, Hyderabad.
               </p>
               {/* Social media icons */}
               <div className="flex gap-4">
